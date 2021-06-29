@@ -1,7 +1,7 @@
 ﻿
-namespace MyFirstApp.ForLoop
+namespace MyFirstApp.WhileLoop
 {
-    partial class frmForLoop
+    partial class frmWhileLoop
     {
         /// <summary>
         /// Required designer variable.
@@ -41,7 +41,7 @@ namespace MyFirstApp.ForLoop
             this.btnSave.Location = new System.Drawing.Point(359, 346);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
-            this.btnSave.TabIndex = 9;
+            this.btnSave.TabIndex = 14;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -51,34 +51,30 @@ namespace MyFirstApp.ForLoop
             this.txtAge.Location = new System.Drawing.Point(309, 272);
             this.txtAge.Name = "txtAge";
             this.txtAge.Size = new System.Drawing.Size(182, 20);
-            this.txtAge.TabIndex = 8;
-            this.txtAge.TextChanged += new System.EventHandler(this.txtAge_TextChanged);
+            this.txtAge.TabIndex = 13;
             // 
             // txtSurname
             // 
             this.txtSurname.Location = new System.Drawing.Point(309, 211);
             this.txtSurname.Name = "txtSurname";
             this.txtSurname.Size = new System.Drawing.Size(182, 20);
-            this.txtSurname.TabIndex = 7;
-            this.txtSurname.TextChanged += new System.EventHandler(this.txtSurname_TextChanged);
+            this.txtSurname.TabIndex = 12;
             // 
             // txtName
             // 
             this.txtName.Location = new System.Drawing.Point(309, 145);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(182, 20);
-            this.txtName.TabIndex = 6;
-            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
+            this.txtName.TabIndex = 11;
             // 
             // txtStudentId
             // 
             this.txtStudentId.Location = new System.Drawing.Point(309, 81);
             this.txtStudentId.Name = "txtStudentId";
             this.txtStudentId.Size = new System.Drawing.Size(182, 20);
-            this.txtStudentId.TabIndex = 5;
-            this.txtStudentId.TextChanged += new System.EventHandler(this.txtStudentId_TextChanged);
+            this.txtStudentId.TabIndex = 10;
             // 
-            // frmForLoop
+            // frmWhileLoop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -88,8 +84,8 @@ namespace MyFirstApp.ForLoop
             this.Controls.Add(this.txtSurname);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.txtStudentId);
-            this.Name = "frmForLoop";
-            this.Text = "frmLoop";
+            this.Name = "frmWhileLoop";
+            this.Text = "frmWhileLoop";
             this.ResumeLayout(false);
             this.PerformLayout();
 
