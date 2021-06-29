@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MyFirstApp.ForeachLoop;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,27 @@ namespace MyFirstApp.ForLoop
         public frmForLoop()
         {
             InitializeComponent();
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            Student student = new Student();
+            student.StudentId = Convert.ToInt32(txtStudentId.Text);
+            student.Name = txtName.Text;
+            student.Surname = txtSurname.Text;
+            student.Age = Convert.ToInt32(txtAge.Text);
+
+            List<Student> studentList = new List<Student>(); //recommended
+            //boxing-polymorphism
+            studentList.Add(student);
+
+            for (int i = 0; i < studentList.Count; i++)
+            {
+                MessageBox.Show(studentList[i].Name + " " + studentList[i].Surname);
+
+            }
+            
+
         }
     }
 }

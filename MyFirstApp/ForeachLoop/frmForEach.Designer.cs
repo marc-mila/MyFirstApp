@@ -63,6 +63,7 @@ namespace MyFirstApp.ForeachLoop
             this.txtAge.Name = "txtAge";
             this.txtAge.Size = new System.Drawing.Size(182, 20);
             this.txtAge.TabIndex = 3;
+            this.txtAge.TextChanged += new System.EventHandler(this.txtAge_TextChanged);
             // 
             // btnSave
             // 
