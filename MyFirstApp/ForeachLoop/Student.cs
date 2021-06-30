@@ -8,18 +8,8 @@ namespace MyFirstApp.ForeachLoop
 {
     public class Student
     {
-        public Student()
-        {
-            
-        }
-
-        public Student(int studentId, string name, string surname, int age)
-        {
-            StudentId = studentId;
-            Name = name;
-            Surname = surname;
-            Age = age;
-        }
+        //propiedades de objeto, se inicializan en constructor de objeto
+        public Guid Guid { get; set; }
 
         public int StudentId { get; set; }
 
@@ -28,6 +18,32 @@ namespace MyFirstApp.ForeachLoop
         public string Surname { get; set; }
 
         public int Age { get; set; }
+
+        //se inicializa en el constructor de clase
+        static int STUDENT_COUNTER;
+
+        //static constructor is called at most one time, before any
+        //instance constructor is invoked or member is accessed.
+        // is single thread and you can use it to create a singleton.
+        static Student()
+        {
+            STUDENT_COUNTER = 0;
+        }
+
+        public Student()
+        {
+            STUDENT_COUNTER += 1;
+            Guid = Guid.NewGuid();
+        }
+
+        public Student(int studentId, string name, string surname, int age) : this()
+        {
+            
+            StudentId = studentId;
+            Name = name;
+            Surname = surname;
+            Age = age;
+        }
 
         public override bool Equals(object obj)
         {
