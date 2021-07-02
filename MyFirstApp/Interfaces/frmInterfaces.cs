@@ -26,7 +26,7 @@ namespace MyFirstApp.Interfaces
             vehiculo.Acelerar(1000);
 
             ICloneable clonable = new Avion();
-            clonable.Clone();
+            //clonable.Clone();
         }
     }
 }

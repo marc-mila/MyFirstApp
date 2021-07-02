@@ -10,7 +10,7 @@ namespace MyFirstApp.Interfaces
     {
         public void Acelerar(int kmh)
         {
-            Console.WriteLine("Acelerando Vehiculo a " + kmh);
+            System.Windows.Forms.MessageBox.Show("Acelerando Vehiculo a " + kmh);
         }
 
         public void Aterrizar()
